@@ -61,30 +61,6 @@ footer{
   transition: all 0.2s; 
 }
 
-.flex-item a#cleansing{
-  background-image: url(../asset/cleansing.jpg); 
-}
-
-.flex-item a#guest{
-  background-image: url(../asset/guest.png); 
-}
-
-.flex-item a#angel{
-  background-image: url(../asset/angel.jpg); 
-}
-
-.flex-item a#poem{
-  background-color: aquamarine;
-}
-.flex-item a#life{
-  background-color: rgb(255, 255, 127);
-}
-.flex-item a#data{
-  background-color: rgb(255, 127, 204);
-}
-.flex-item a#scrape{
-  background-color: rgb(127, 182, 255);
-}
 
 .flex-item a:hover{
   color:#bbbbbb;
