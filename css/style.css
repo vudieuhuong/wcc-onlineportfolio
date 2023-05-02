@@ -59,6 +59,30 @@ footer{
   flex-wrap: wrap;
 }
 
+
+/* original aspect ratio width="640" height="360" */
+.responsive-video{
+  position: relative;
+  width: 100%; /* adjust this and the padding-top to change how big it is*/
+  height: 0;
+  padding-top: 57%; /* padding top is in reltation to the width of parent, it preserves aspect ratio*/
+  /* margin: 0 auto; */ /*this would center your video in the section container*/
+}
+.responsive-video iframe{
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}
+
+
+.flex-container{
+  display: flex; /* all children will now be flex items */
+  flex-direction: row; /* other option is column */
+  flex-wrap: wrap; /* means the children will wrap to a new line */
+}
+
 .flex-item{
   display: flex;
   flex-grow: 0;
@@ -66,6 +90,14 @@ footer{
   flex-basis: 25%; 
   box-sizing: border-box;
   padding: 5px;
+}
+
+.flex-basis-third .flex-item{
+  flex-basis: 33.33%; 
+}
+
+.flex-basis-half .flex-item{
+  flex-basis: 50%; 
 }
 
 .flex-item a{
@@ -110,23 +142,24 @@ footer{
 }
 
 .flex-item a#poem{
-  background-color: aquamarine;
+  background-image: url(../asset/poem.jpg); 
 }
 
 .flex-item a#life{
-  background-color: rgb(255, 255, 127);
+  background-image: url(../asset/life.jpg); 
 }
 
 .flex-item a#data{
-  background-color: rgb(255, 127, 204);
+  background-image: url(../asset/data.jpg); 
 }
 
 .flex-item a#scrape{
-  background-color: rgb(127, 182, 255);
+  background-image: url(../asset/scrape.jpg); 
 }
 
+
 .flex-item a#pull{
-  background-image: url(../asset/pull.png); 
+  background-image: url(../asset/pull.jpg); 
 }
 
 .flex-item a#threed{
